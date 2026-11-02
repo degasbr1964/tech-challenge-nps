@@ -2,6 +2,8 @@
 
 **Tech Challenge · Fase 1 · Pós-graduação AI Scientist**
 
+**Integrante:** Edgar Takakura — RM 371998
+
 Este projeto analisa 2.500 pedidos de um e-commerce com dois objetivos: identificar quais fatores operacionais explicam o NPS (Net Promoter Score, ou índice de recomendação do cliente) e construir um modelo que aponte, antes da aplicação da pesquisa, os clientes com maior risco de se tornarem detratores.
 
 ---
@@ -156,7 +158,8 @@ python -m src.predict caminho/novos_pedidos.csv
 - Notebooks e código: este repositório
 - Relatório de negócio: [`reports/relatorio_negocio.md`](reports/relatorio_negocio.md)
 - Apresentação gerencial: [`docs/apresentacao_gerencial_nps.pptx`](docs/apresentacao_gerencial_nps.pptx)
-- Roteiro do vídeo executivo: [`docs/roteiro_video_executivo.md`](docs/roteiro_video_executivo.md)
+- Vídeo executivo: [`docs/apresentacao_gerencial_nps.mp4`](docs/apresentacao_gerencial_nps.mp4)
+- Roteiro da apresentação: [`docs/Roteiro_apresentacao_NPS.md`](docs/Roteiro_apresentacao_NPS.md)
 
 ## 9. Referências
 
