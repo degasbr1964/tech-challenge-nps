@@ -259,7 +259,7 @@ Uma simulação feita com os próprios dados históricos estimou o NPS em difere
 
 ## 5. Recomendações priorizadas
 
-Seguindo a Aula 4, as recomendações abaixo são desdobramentos das evidências apresentadas, e incluem também as ações de aprofundamento e validação que a análise ainda exige.
+Seguindo a Aula 4, as cinco recomendações abaixo são desdobramentos diretos das evidências apresentadas, na mesma ordem de prioridade levada à apresentação gerencial.
 
 | Prioridade | Ação | Área | Indicador de acompanhamento |
 |---|---|---|---|
@@ -267,9 +267,7 @@ Seguindo a Aula 4, as recomendações abaixo são desdobramentos das evidências
 | 2 | **Prazo realista:** recalibrar o prazo exibido no checkout (etapa final da compra) por rota, com base no histórico | Logística / Produto | % de entregas no prazo prometido |
 | 3 | **Contato proativo:** avisar o cliente antes que ele precise reclamar e oferecer compensação | Experiência do Cliente | NPS dos pedidos atrasados |
 | 4 | **Resolução no primeiro contato:** dar autonomia ao SAC e criar fila prioritária a partir do segundo contato | Atendimento | FCR e tempo médio de resolução |
-| 5 | **Origem das reclamações:** classificar os motivos (produto, seller, embalagem, entre outros) e atacar os principais | Produto / Marketplace | Reclamações por pedido |
-| 6 | **Modelo em produção com piloto:** pontuar o risco diariamente e medir o efeito com um teste A/B (comparação entre um grupo que recebe a mudança e outro que não recebe) | Dados / Experiência do Cliente | Diferença de NPS entre o grupo piloto e o grupo de controle |
-| 7 | **Aprofundar a análise:** confirmar a definição das colunas de prazo e atraso, e incluir dados de transportadora, categoria de produto e motivo da reclamação | Dados | Base enriquecida e validada |
+| 5 | **Modelo em produção com piloto:** pontuar o risco diariamente e medir o efeito com um teste A/B (comparação entre um grupo que recebe a mudança e outro que não recebe) | Dados / Experiência do Cliente | Diferença de NPS entre o grupo piloto e o grupo de controle |
 
 ---
 

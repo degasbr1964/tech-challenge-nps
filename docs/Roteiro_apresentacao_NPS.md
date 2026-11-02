@@ -2,70 +2,62 @@
 
 > Texto conforme as notas de cada slide (o mesmo utilizado no vídeo).
 
-## Slide 1 — O que leva o cliente à detração e como antecipar esse risco
+## Slide 1 — Atrasou, perdeu: o que transforma nossos clientes em detratores
 
-Nesta apresentação, mostramos o que os dados de 2.500 pedidos revelam sobre a satisfação dos clientes e como a empresa pode agir antes da aplicação da pesquisa de NPS.
+Olá, meu nome é Edgar e nesta apresentação vamos mostrar o que os dados de 2.500 pedidos revelam sobre a satisfação dos nossos clientes e como agir antes da pesquisa de NPS.
 
-## Slide 2 — RESUMO EXECUTIVO
+## Slide 2 — CONTEXTO
 
-Resumindo a história em três partes: a empresa cresceu, mas 84% dos clientes se tornaram detratores, principalmente por atraso e por problemas no atendimento, e por isso a prioridade é cumprir o prazo prometido e agir antes da pesquisa.
+O e-commerce cresceu, mas o NPS está em -80. Para cada promotor, temos 19 detratores. Isso pesa direto no caixa: promotores recompram, detratores não voltam. E hoje só descobrimos isso depois que a jornada acabou.
 
-## Slide 3 — CONTEXTO
+## Slide 3 — PERGUNTA
 
-O e-commerce cresceu, mas o NPS está em -80, com cerca de 19 detratores para cada promotor. Isso tem impacto direto na receita, porque os promotores recompram e os detratores não voltam, e hoje a empresa só conhece essa insatisfação depois que a jornada termina.
+A primeira pergunta é de diagnóstico: o que explica a insatisfação? A segunda é de antecipação: dá para prever o detrator antes da pesquisa?
 
-## Slide 4 — PERGUNTA
+## Slide 4 — INSIGHT 1 · FATORES
 
-A primeira pergunta é de diagnóstico e busca entender o que explica a insatisfação. A segunda é de previsão e busca identificar o cliente em risco antes da pesquisa.
+Testamos 13 variáveis operacionais. Só quatro têm relação real com a nota: atraso, reclamações, contatos com o SAC e tempo de resolução. Preço, frete, desconto, região e idade praticamente não importam.
 
-## Slide 5 — INSIGHT 1 · FATORES
+## Slide 5 — INSIGHT 2 · LOGÍSTICA
 
-Analisamos 13 variáveis da operação, e apenas quatro têm relação relevante com a nota: atraso, reclamações, contatos com o SAC e tempo de resolução. Preço, frete, desconto, região e idade praticamente não influenciam o resultado.
+Este é o achado central. O ponto de ruptura é de 2 dias de atraso: a partir dele, 88% dos clientes viram detratores e os promotores desaparecem. E 64% dos nossos pedidos já estão nessa zona.
 
-## Slide 6 — INSIGHT 2 · LOGÍSTICA
+## Slide 6 — INSIGHT 3 · PROMESSA
 
-Este é o achado central da análise. O ponto de ruptura está em 2 dias de atraso, a partir do qual 88% dos clientes se tornam detratores e os promotores praticamente desaparecem, e 64% dos pedidos já estão nessa faixa.
+Um ponto contraintuitivo: o prazo total não muda a satisfação. Entregas de 3 ou de 14 dias têm o mesmo NPS. O que destrói a nota é quebrar a promessa. Isso abre espaço para recalibrar os prazos exibidos no checkout.
 
-## Slide 7 — INSIGHT 3 · PROMESSA
+## Slide 7 — INSIGHT 4 · ATENDIMENTO
 
-Este é um resultado que contraria a expectativa: o prazo total não altera a satisfação, e entregas de 3 ou de 14 dias têm o mesmo NPS. O que reduz a nota é o atraso em relação ao que foi prometido, o que permite recalibrar os prazos exibidos no checkout.
+No atendimento, o padrão se repete. Com até uma reclamação, 28% são detratores; com duas ou três, 76%. Quem não precisou falar com o SAC tem NPS de -60; com quatro contatos, -97. Resolver rápido e na primeira vez faz diferença.
 
-## Slide 8 — INSIGHT 4 · ATENDIMENTO
+## Slide 8 — INSIGHT 5 · EFEITO COMBINADO
 
-No atendimento, o padrão se repete. Com até uma reclamação, 28% dos clientes são detratores, e com duas ou três esse percentual sobe para 76%. Quem não precisou falar com o SAC tem NPS de -60, que cai para -97 com quatro contatos ou mais.
+Os problemas se acumulam. Sem nenhum problema, o NPS é -28; com um, cai para -77; com três, -97. E 92% dos detratores passaram por pelo menos um desses problemas, então a maior parte da detração é evitável.
 
-## Slide 9 — INSIGHT 5 · EFEITO COMBINADO
+## Slide 9 — INSIGHT 6 · PERFIL
 
-Os problemas se acumulam: sem nenhum problema, o NPS é de -28, com um problema cai para -77 e com três chega a -97. Como 92% dos detratores passaram por pelo menos um desses problemas, a maior parte da detração pode ser evitada.
+Testamos região, idade, tempo de casa e valor do pedido. Todos ficam perto de -80. Não há um perfil de cliente detrator; o que separa promotor de detrator é a experiência que ele teve.
 
-## Slide 10 — INSIGHT 6 · PERFIL
+## Slide 10 — MODELO PREDITIVO
 
-Analisamos região, faixa etária, tempo de relacionamento e valor do pedido, e todos os grupos ficam próximos de -80. Não há um perfil demográfico de detrator; o que diferencia o promotor do detrator é a experiência que ele teve.
+O modelo responde: qual a chance de este cliente virar detrator? Ele classifica cada pedido em risco baixo, médio ou alto. No grupo de alto risco, 100% viraram detratores. Ele acerta 94% das vezes em que aponta um detrator e encontra 83% deles antes da pesquisa. É uma regressão logística, simples e explicável.
 
-## Slide 11 — MODELO PREDITIVO
+## Slide 11 — NA PRÁTICA
 
-O modelo responde à pergunta: qual a chance de este cliente se tornar detrator? Ele classifica cada pedido em risco baixo, médio ou alto, e no grupo de alto risco todos os clientes se tornaram detratores. Quando aponta um detrator, acerta 94% das vezes, e identifica 83% dos detratores antes da pesquisa. Trata-se de uma regressão logística, um modelo simples e explicável.
+Na prática: o modelo roda todo dia sobre os pedidos em andamento, gera uma lista priorizada com o motivo do risco, e cada faixa tem uma ação definida. Todo mês comparamos previsto e real para manter o modelo afiado.
 
-## Slide 12 — NA PRÁTICA
+## Slide 12 — IMPACTO ESTIMADO
 
-Na prática, o modelo é executado todos os dias sobre os pedidos em andamento e gera uma lista priorizada com o motivo do risco, e cada faixa tem uma ação definida. Todos os meses, o resultado previsto é comparado com o real, e o modelo é retreinado se necessário.
+Simulamos cenários com base no histórico. Só limitar o atraso a 1 dia leva o NPS de -80 para -66. Combinando com menos reclamações, chegamos a -41: são 39 pontos. É uma estimativa, que precisa ser validada com um piloto.
 
-## Slide 13 — IMPACTO ESTIMADO
+## Slide 13 — RECOMENDAÇÕES
 
-Simulamos cenários com base nos dados históricos. Limitar o atraso a 1 dia levaria o NPS de -80 para cerca de -66, e combinar essa medida com a redução das reclamações levaria a cerca de -41, um ganho de 39 pontos. É uma estimativa, que precisa ser validada com um piloto.
+Cinco ações: alerta de atraso antes do segundo dia, prazo realista no checkout, contato proativo com quem está em risco, resolução no primeiro contato no SAC e o modelo em produção com um piloto A/B para medir o ganho real.
 
-## Slide 14 — RECOMENDAÇÕES
+## Slide 14 — LIMITAÇÕES E RISCOS
 
-As recomendações são: criar um alerta de atraso antes do segundo dia, exibir um prazo realista no checkout, fazer contato proativo com os clientes em risco, resolver o problema no primeiro contato com o SAC, colocar o modelo em produção com um piloto A/B e aprofundar a análise com novas fontes de dados.
+Limitações: a análise mostra correlação, não causa; a base parece simulada, então em produção o desempenho deve ser menor; não temos datas; e a pontuação de risco deve ser usada para ajudar o cliente, nunca para punir.
 
-## Slide 15 — LIMITAÇÕES E RISCOS
+## Slide 15 — Entregar no prazo prometido é a nossa maior alavanca de NPS
 
-Há limitações importantes: a análise mostra correlação, e não causa; a base tem indícios de ser simulada, o que deve reduzir o desempenho em dados reais; não há datas; e a pontuação de risco deve ser usada para ajudar o cliente, e nunca para punir.
-
-## Slide 16 — Cumprir o prazo prometido é a principal alavanca do NPS
-
-Em resumo, a satisfação do cliente depende de cumprir a promessa de entrega e de resolver os problemas com rapidez. Propomos um piloto de 60 dias para medir o ganho antes de ampliar a solução.
-
-## Slide 17 — GLOSSÁRIO
-
-Glossário de apoio para a leitura dos slides.
+Em resumo: a satisfação do cliente depende de cumprir a promessa de entrega e resolver problemas rápido. Propomos um piloto de 60 dias para provar o ganho antes de escalar.

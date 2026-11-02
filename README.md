@@ -34,7 +34,19 @@ Pergunta do modelo preditivo (desafio opcional):
 | **Modelo** | Regressão Logística com AUC (Area Under the Curve, ou área sob a curva) de 0,87 e precisão de 94%; na faixa de alto risco, 100% dos clientes foram detratores |
 | **Simulação** | Atraso máximo de 1 dia e até 3 reclamações levariam o NPS estimado a **-41**, um ganho de 39 pontos |
 
-## 3. Estrutura do repositório
+## 3. Recomendações
+
+Cinco ações priorizadas a partir das evidências, na mesma ordem levada à apresentação gerencial:
+
+| # | Ação | Área | Como medir |
+|---|---|---|---|
+| 1 | **Alerta de atraso:** plano de contingência quando o pedido se aproxima de 1 dia de atraso | Logística | % de pedidos com 2 dias de atraso ou mais |
+| 2 | **Prazo realista no checkout (etapa final da compra):** recalibrar a promessa por rota, com base no histórico real | Logística / Produto | % de entregas no prazo prometido |
+| 3 | **Contato proativo:** avisar o cliente antes que ele reclame e compensar os casos de alto risco | Experiência do Cliente | NPS dos pedidos atrasados |
+| 4 | **Resolução no 1º contato:** autonomia ao SAC, fila prioritária no 2º contato e SLA (Service Level Agreement, ou acordo de nível de serviço) de até 2 dias | Atendimento | % de resolução no 1º contato |
+| 5 | **Modelo em produção com piloto:** pontuação diária de risco e teste A/B (comparação entre um grupo que recebe a mudança e outro que não recebe) para medir o ganho real | Dados | NPS do piloto contra o grupo de controle |
+
+## 4. Estrutura do repositório
 
 ```
 tech-challenge-nps/
@@ -65,7 +77,7 @@ tech-challenge-nps/
 └── README.md
 ```
 
-## 4. Descrição da base de dados
+## 5. Descrição da base de dados
 
 O arquivo `data/raw/desafio_nps_fase_1.csv` tem **2.500 pedidos**, um por cliente, e 19 colunas, sem valores ausentes e sem registros duplicados.
 
@@ -96,7 +108,7 @@ O arquivo `data/raw/desafio_nps_fase_1.csv` tem **2.500 pedidos**, um por client
 - A coluna `nps_score` tem casas decimais, e por isso foi adotada a regra Detrator para notas menores que 7, Neutro de 7 a menos de 9 e Promotor para 9 ou mais.
 - As colunas `csat_internal_score` e `repeat_purchase_30d` são medidas junto com o NPS ou depois dele, e ficaram fora do modelo para evitar vazamento de informação (*data leakage*).
 
-## 5. Metodologia
+## 6. Metodologia
 
 A metodologia segue o fluxo apresentado nas aulas da Fase 1: perguntar, explorar, visualizar e comunicar.
 
@@ -111,7 +123,7 @@ A metodologia segue o fluxo apresentado nas aulas da Fase 1: perguntar, explorar
    - A métrica principal é a AUC, porque a acurácia é enganosa com 84% de detratores, e também foram avaliados precisão, recall (sensibilidade) e F1 (equilíbrio entre precisão e recall). Na regressão, foram usados o MAE (Mean Absolute Error, ou erro absoluto médio) e o R² (coeficiente de determinação).
 5. **Storytelling e recomendações (Aula 4).** Os resultados foram organizados nos frameworks ABT (And–But–Therefore) e Pergunta → Descoberta → Insight → Recomendação, com faixas de risco, uma ação por faixa e simulação de cenários.
 
-## 6. Como reproduzir os resultados
+## 7. Como reproduzir os resultados
 
 É necessário ter o Python 3.10 ou superior instalado.
 
@@ -145,7 +157,7 @@ Para pontuar novos pedidos, basta informar o arquivo, que precisa ter as mesmas 
 python -m src.predict caminho/novos_pedidos.csv
 ```
 
-## 7. Limitações
+## 8. Limitações
 
 - **Correlação não é causa:** as recomendações devem ser validadas com piloto ou teste A/B (comparação entre um grupo que recebe a mudança e outro que não recebe).
 - **Indícios de base simulada:** há relações muito regulares, como a recompra de 0% entre detratores e de 100% entre promotores, e em dados reais o desempenho tende a ser menor.
@@ -153,7 +165,7 @@ python -m src.predict caminho/novos_pedidos.csv
 - **Recorte da base:** a base contém apenas clientes que responderam à pesquisa.
 - **Definições a confirmar:** a relação entre `delivery_time_days` e `delivery_delay_days` e o motivo de a nota NPS ter casas decimais.
 
-## 8. Entregáveis
+## 9. Entregáveis
 
 - Notebooks e código: este repositório
 - Relatório de negócio: [`reports/relatorio_negocio.md`](reports/relatorio_negocio.md)
@@ -161,7 +173,7 @@ python -m src.predict caminho/novos_pedidos.csv
 - Vídeo executivo: [`docs/apresentacao_gerencial_nps.mp4`](docs/apresentacao_gerencial_nps.mp4)
 - Roteiro da apresentação: [`docs/Roteiro_apresentacao_NPS.md`](docs/Roteiro_apresentacao_NPS.md)
 
-## 9. Referências
+## 10. Referências
 
 - DUARTE, N. *DataStory: explique dados e inspire ações por meio de histórias*. Rio de Janeiro: Alta Books, 2021.
 - GRUS, J. *Data Science do zero: noções fundamentais com Python*. 2. ed. Rio de Janeiro: Alta Books, 2021.
@@ -180,6 +192,7 @@ python -m src.predict caminho/novos_pedidos.csv
 | AUC (Area Under the Curve) | Mede se o modelo ordena bem os clientes por risco; 0,5 equivale ao acaso e 1,0 a acerto perfeito. |
 | Baseline | Modelo de referência mais simples possível, usado para verificar se o modelo real aprendeu algo. |
 | Boxplot | Gráfico que mostra mediana, quartis e valores extremos de uma variável. |
+| Checkout | Etapa final da compra, em que o prazo de entrega é informado ao cliente. |
 | Classificação | Tipo de modelo que prevê uma categoria, como detrator ou não detrator. |
 | CSAT (Customer Satisfaction Score) | Nota de satisfação do cliente com uma interação específica. |
 | Detrator | Cliente que deu nota de 0 a 6 e tende a não recomendar a empresa. |
